@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Markmap</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #mindmap {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+
+<body>
+  <h1 style="text-align: center;">Software Development Lifecycle</h1>
+  <div style="text-align: center;">
+    <a href="http://127.0.0.1:5501/index.html#/3">back</a>
+  </div>
+  <svg id="mindmap"></svg>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script>
+  <script>(() => { setTimeout(() => { const { markmap: x, mm: K } = window, P = new x.Toolbar; P.attach(K); const F = P.render(); F.setAttribute("style", "position:absolute;bottom:20px;right:20px"), document.body.append(F) }) })()</script>
+  <script>((b, L, T, D) => { const H = b(); window.mm = H.Markmap.create("svg#mindmap", (L || H.deriveOptions)(D), T) })(() => window.markmap, null, { "content": "Work Breakdown Structure (WBS) in SDLC", "children": [{ "content": "Purpose of a WBS", "children": [{ "content": "<strong>Organized Planning:</strong> Breaks down complex projects into smaller, manageable work packages.", "children": [], "payload": { "tag": "li", "lines": "15,16" } }, { "content": "<strong>Scope Definition:</strong> Clearly defines the project scope, preventing scope creep.", "children": [], "payload": { "tag": "li", "lines": "16,17" } }, { "content": "<strong>Resource Allocation:</strong> Facilitates resource allocation to specific tasks.", "children": [], "payload": { "tag": "li", "lines": "17,18" } }, { "content": "<strong>Cost Estimation:</strong> Enables accurate cost estimation for each work package.", "children": [], "payload": { "tag": "li", "lines": "18,19" } }, { "content": "<strong>Schedule Development:</strong> Supports the creation of a realistic project schedule.", "children": [], "payload": { "tag": "li", "lines": "19,20" } }, { "content": "<strong>Progress Tracking:</strong> Allows for tracking progress against the defined work packages.", "children": [], "payload": { "tag": "li", "lines": "20,21" } }, { "content": "<strong>Communication:</strong> Improves communication among team members and stakeholders.", "children": [], "payload": { "tag": "li", "lines": "21,23" } }], "payload": { "tag": "h2", "lines": "13,14" } }, { "content": "Structure of a WBS", "children": [{ "content": "<strong>Level 1:</strong> The project itself (e.g., \"Develop Mobile Banking App\").", "children": [], "payload": { "tag": "li", "lines": "27,28" } }, { "content": "<strong>Level 2:</strong> Major deliverables or phases (e.g., \"Requirements Gathering,\" \"Design,\" \"Development,\" \"Testing,\" \"Deployment\").", "children": [], "payload": { "tag": "li", "lines": "28,29" } }, { "content": "<strong>Level 3 (and below):</strong> Sub-deliverables, tasks, and sub-tasks.  These should be actionable and assignable.  Work packages are at the lowest level of the WBS.", "children": [], "payload": { "tag": "li", "lines": "29,31" } }], "payload": { "tag": "h2", "lines": "23,24" } }, { "content": "Work Packages", "children": [{ "content": "<strong>Defined:</strong> Clearly described and understood.", "children": [], "payload": { "tag": "li", "lines": "35,36" } }, { "content": "<strong>Actionable:</strong> Tasks that can be performed.", "children": [], "payload": { "tag": "li", "lines": "36,37" } }, { "content": "<strong>Assignable:</strong> Responsibility can be assigned.", "children": [], "payload": { "tag": "li", "lines": "37,38" } }, { "content": "<strong>Measurable:</strong> Progress can be tracked.", "children": [], "payload": { "tag": "li", "lines": "38,39" } }, { "content": "<strong>Time-bound:</strong> Estimated duration.", "children": [], "payload": { "tag": "li", "lines": "39,41" } }], "payload": { "tag": "h2", "lines": "31,32" } }, { "content": "Creating a WBS", "children": [{ "content": "1. <strong>Identify the Project:</strong> Define the overall project objective.", "children": [], "payload": { "tag": "li", "lines": "43,44", "listIndex": 1 } }, { "content": "2. <strong>Decompose into Major Deliverables:</strong> Break the project down into major deliverables or phases.", "children": [], "payload": { "tag": "li", "lines": "44,45", "listIndex": 2 } }, { "content": "3. <strong>Subdivide Deliverables:</strong> Further decompose each deliverable into smaller sub-deliverables and tasks.", "children": [], "payload": { "tag": "li", "lines": "45,46", "listIndex": 3 } }, { "content": "4. <strong>Define Work Packages:</strong> Break down tasks into actionable work packages.", "children": [], "payload": { "tag": "li", "lines": "46,47", "listIndex": 4 } }, { "content": "5. <strong>Verify and Review:</strong> Ensure all necessary work is included and the WBS is logically structured.", "children": [], "payload": { "tag": "li", "lines": "47,49", "listIndex": 5 } }], "payload": { "tag": "h2", "lines": "41,42" } }, { "content": "Best Practices", "children": [{ "content": "<strong>Use a consistent numbering system:</strong> Makes it easy to refer to specific elements.", "children": [], "payload": { "tag": "li", "lines": "51,52" } }, { "content": "<strong>Involve the team:</strong> Collaborate with team members to create the WBS.", "children": [], "payload": { "tag": "li", "lines": "52,53" } }, { "content": "<strong>Keep it manageable:</strong> Avoid overly detailed breakdowns.", "children": [], "payload": { "tag": "li", "lines": "53,54" } }, { "content": "<strong>Regularly review and update:</strong> The WBS should be a living document that is updated as needed.", "children": [], "payload": { "tag": "li", "lines": "54,55" } }, { "content": "<strong>Use WBS software:</strong> Tools like Microsoft Project, Wrike, or MindManager can help create and manage WBS diagrams.", "children": [], "payload": { "tag": "li", "lines": "55,56" } }], "payload": { "tag": "h2", "lines": "49,50" } }], "payload": { "tag": "h1", "lines": "9,10" } }, { "maxWidth": 300, "initialExpandLevel": 1, "color": ["#2980b9"], "activeNode": { "placement": "center" } })</script>
+</body>
+
+</html>

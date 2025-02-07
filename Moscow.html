@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MoSCOW</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #mindmap {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/style.css">
+</head>
+
+<body>
+  <h1 style="text-align: center;">MoSCOW</h1>
+  <div style="text-align: center;">
+    <a href="http://127.0.0.1:5501/index.html#/5">back</a>
+  </div>
+  <svg id="mindmap"></svg>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.8/dist/browser/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.8/dist/index.js"></script>
+  <script>(() => { setTimeout(() => { const { markmap: x, mm: K } = window, P = new x.Toolbar; P.attach(K); const F = P.render(); F.setAttribute("style", "position:absolute;bottom:20px;right:20px"), document.body.append(F) }) })()</script>
+  <script>((b, L, T, D) => { const H = b(); window.mm = H.Markmap.create("svg#mindmap", (L || H.deriveOptions)(D), T) })(() => window.markmap, null, { "content": "MoSCoW Method: Prioritizing Requirements", "children": [{ "content": "How to Use the MoSCoW Method", "children": [{ "content": "1. \n<p data-lines=\"21,22\"><strong>Gather Requirements:</strong> Collect all potential requirements from stakeholders (users, clients, developers, etc.).</p>", "children": [], "payload": { "tag": "li", "lines": "21,23", "listIndex": 1 } }, { "content": "2. \n<p data-lines=\"23,24\"><strong>Categorize Requirements:</strong> Work with stakeholders to categorize each requirement into one of the four MoSCoW categories (Must have, Should have, Could have, Won't have).  This is often done through workshops or discussions.</p>", "children": [], "payload": { "tag": "li", "lines": "23,25", "listIndex": 2 } }, { "content": "3. \n<p data-lines=\"25,26\"><strong>Prioritize Within Categories:</strong>  Within each category (especially \"Should have\" and \"Could have\"), prioritize the requirements based on their value and feasibility.</p>", "children": [], "payload": { "tag": "li", "lines": "25,27", "listIndex": 3 } }, { "content": "4. \n<p data-lines=\"27,28\"><strong>Document and Communicate:</strong> Document the prioritized requirements and communicate them clearly to the project team and stakeholders.</p>", "children": [], "payload": { "tag": "li", "lines": "27,29", "listIndex": 4 } }, { "content": "5. \n<p data-lines=\"29,30\"><strong>Review and Adjust:</strong>  The MoSCoW prioritization should be reviewed and adjusted periodically throughout the project lifecycle as priorities may change.</p>", "children": [], "payload": { "tag": "li", "lines": "29,31", "listIndex": 5 } }], "payload": { "tag": "h2", "lines": "19,20" } }, { "content": "Benefits of the MoSCoW Method", "children": [{ "content": "<strong>Clear Prioritization:</strong> Provides a clear and structured way to prioritize requirements.", "children": [], "payload": { "tag": "li", "lines": "33,34" } }, { "content": "<strong>Stakeholder Alignment:</strong> Facilitates communication and agreement among stakeholders on what is most important.", "children": [], "payload": { "tag": "li", "lines": "34,35" } }, { "content": "<strong>Scope Management:</strong> Helps manage project scope by explicitly excluding less important requirements.", "children": [], "payload": { "tag": "li", "lines": "35,36" } }, { "content": "<strong>Focus on Value:</strong> Ensures the team focuses on delivering the most valuable features first.", "children": [], "payload": { "tag": "li", "lines": "36,37" } }, { "content": "<strong>Flexibility:</strong> Allows for adjustments in priorities as the project evolves.", "children": [], "payload": { "tag": "li", "lines": "37,39" } }], "payload": { "tag": "h2", "lines": "31,32" } }, { "content": "Example", "children": [{ "content": "\n<p data-lines=\"43,44\"><strong>Must have:</strong></p>", "children": [{ "content": "Users can browse restaurants.", "children": [], "payload": { "tag": "li", "lines": "44,45" } }, { "content": "Users can place orders.", "children": [], "payload": { "tag": "li", "lines": "45,46" } }, { "content": "Secure payment processing.", "children": [], "payload": { "tag": "li", "lines": "46,48" } }], "payload": { "tag": "li", "lines": "43,48" } }, { "content": "\n<p data-lines=\"48,49\"><strong>Should have:</strong></p>", "children": [{ "content": "User reviews and ratings.", "children": [], "payload": { "tag": "li", "lines": "49,50" } }, { "content": "Order tracking.", "children": [], "payload": { "tag": "li", "lines": "50,51" } }, { "content": "Promotional offers.", "children": [], "payload": { "tag": "li", "lines": "51,53" } }], "payload": { "tag": "li", "lines": "48,53" } }, { "content": "\n<p data-lines=\"53,54\"><strong>Could have:</strong></p>", "children": [{ "content": "Integration with social media.", "children": [], "payload": { "tag": "li", "lines": "54,55" } }, { "content": "Loyalty program.", "children": [], "payload": { "tag": "li", "lines": "55,56" } }, { "content": "Advanced search filters.", "children": [], "payload": { "tag": "li", "lines": "56,58" } }], "payload": { "tag": "li", "lines": "53,58" } }, { "content": "\n<p data-lines=\"58,59\"><strong>Won't have (this time):</strong></p>", "children": [{ "content": "Delivery service integration (initially).", "children": [], "payload": { "tag": "li", "lines": "59,60" } }, { "content": "Multi-language support (initially).", "children": [], "payload": { "tag": "li", "lines": "60,62" } }], "payload": { "tag": "li", "lines": "58,62" } }], "payload": { "tag": "h2", "lines": "39,40" } }], "payload": { "tag": "h1", "lines": "7,8" } }, { "initialExpandLevel": 1, "maxWidth": 300, "color": ["#2980b9"] })</script>
+</body>
+
+</html>
